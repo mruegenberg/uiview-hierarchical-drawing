@@ -35,3 +35,7 @@ Below are two examples of rendering into a PDF context. One uses `UIView+Hierarc
 Known issues
 ----------
 There are some possible problems with custom patterns as view backgrounds.
+
+License
+-------
+MIT. See `LICENSE`.
