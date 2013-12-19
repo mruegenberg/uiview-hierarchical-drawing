@@ -7,7 +7,6 @@
 //
 
 #import "UIView+HierarchicalDrawing.h"
-#import "TimetableView.h"
 
 @implementation UIView (HierarchicalDrawing)
 
@@ -19,9 +18,6 @@
     
     CGContextTranslateCTM(c, self.frame.origin.x, self.frame.origin.y);
     
-    // FIXME: this is a hack
-    if([self isKindOfClass:[TimetableView class]])
-        [self performSelector:@selector(setPatternAsBg)];
     if([self isKindOfClass:[UIScrollView class]]) {
         UIScrollView *sSelf = (UIScrollView *)self;
         CGContextTranslateCTM(c, (-1) * sSelf.contentOffset.x, (-1) * sSelf.contentOffset.y);
