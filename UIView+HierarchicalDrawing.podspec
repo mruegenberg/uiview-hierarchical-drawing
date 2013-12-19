@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '5.0'
 
-  s.source       = { :git => "https://github.com/mruegenberg/uiview-hierarchical-drawing", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/mruegenberg/uiview-hierarchical-drawing.git", :tag => "0.1.0" }
 
   s.source_files  = 'UIView+HierarchicalDrawing.{h,m}'
 
